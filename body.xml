@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://model.bxd.fi" xmlns:ns2="http://bxd.fi/CorporateFileService">
+  <SOAP-ENV:Body>
+    <ns2:helloWorldin>
+      <ns1:RequestHeader>
+        <ns1:SenderId>123456789</ns1:SenderId>
+        <ns1:RequestId>1</ns1:RequestId>
+        <ns1:Timestamp>2015-01-01T12:00:00+02:00</ns1:Timestamp>
+        <ns1:Language>FI</ns1:Language>
+        <ns1:UserAgent>Kajala Test</ns1:UserAgent>
+        <ns1:ReceiverId>987654321</ns1:ReceiverId>
+      </ns1:RequestHeader>
+    <ns1:ApplicationRequest>Hello world payload here</ns1:ApplicationRequest>
+    </ns2:helloWorldin>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
