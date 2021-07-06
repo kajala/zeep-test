@@ -6,6 +6,7 @@ envelope = etree.fromstring(body_bytes)
 binary_signature = BinarySignature('./key.pem', './cert.pem')
 envelope, soap_headers = binary_signature.apply(envelope, {})
 signed_body_bytes = etree.tostring(envelope)
+print('OK!')
 """
 ------------------------------------------------------------------------------------ OUTPUT BEGIN
 Traceback (most recent call last):
